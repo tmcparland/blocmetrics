@@ -1,3 +1,10 @@
+# Mentor login
+User.create!(
+  email: 'mentor@analytics.com',
+  password: 'helloworld',
+  confirmed_at: '2016-08-21'
+)
+
 # Create Users
 10.times do
   User.create!(
@@ -17,7 +24,7 @@ users = User.all
    )
  end
 registered_applications = RegisteredApplication.all
- 
+
  puts "Seed finished"
  puts "#{User.count} users created"
- puts "#{RegisteredApplication.count} applicationss created"
+ puts "#{RegisteredApplication.count} applications created"

@@ -1,3 +1,3 @@
-class RegisteredApplication
-    belongs_to :user
+class RegisteredApplication < ApplicationRecord
+  belongs_to :user
 end
