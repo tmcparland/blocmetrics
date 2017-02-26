@@ -1,5 +1,16 @@
-<h1>Welcome to Analytics</h1>
-<p id="index-title">This is the home page for Analytics.</p>
-<div class="posts">Post 1 goes here.</div>
-<div class="posts">Post 2 goes here.</div>
-<section>I am the content in a section element.</section>
+ <br>
+ <div class="jumbotron">
+   <h1>Analytic</h1>
+   <p>Analytics is a resource for finding out about your website!</p>
+   <p>
+     <%= link_to "Sign In", new_session_path %> or
+     <%= link_to "Sign Up", new_user_path, class: 'btn btn-primary' %> today!
+   </p>
+ </div>
+ 
+ <div class="row">
+   <div class="col-md-4">
+     <h2>This Application will tell you how many people have visited your website.</h2>
+     <p>In case you don't want to just use a hit counter.</p>
+   </div>
+ </div>

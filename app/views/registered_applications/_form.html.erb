@@ -1,0 +1,10 @@
+ <h4>Add an Application</h4>
+
+ <%= form_for [user, registered_application] do |f| %>
+   <div class="form-group">
+     <%= f.label :name, class: 'sr-only' %>
+     <%= f.text_field :name, class: 'form-control', placeholder: "Enter a new application" %>
+     <%= f.text_field :url, class: 'form-control', placeholder: "Enter the url for the application" %>
+   </div>
+   <%= f.submit "Submit Item", class: 'btn btn-default pull-right' %>
+ <% end %>
