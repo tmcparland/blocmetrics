@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-    resources :registered_applications
+  resources :registered_applications
 
   get 'about' => 'welcome#about'
 
